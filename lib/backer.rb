@@ -1,4 +1,4 @@
-class Backer
+class Baker
   
   attr_reader :name, :backed_projects
   
@@ -7,9 +7,4 @@ class Backer
     @backed_projects = []
   end
   
-  def back_project(title)
-    @backed_projects << title
-    title.backers << self
-  end
   
-end
